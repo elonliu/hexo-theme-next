@@ -154,7 +154,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /img/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -174,8 +174,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
