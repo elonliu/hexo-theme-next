@@ -71,8 +71,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-scheme: Mist
+scheme: Muse
+#scheme: Mist
 #scheme: Pisces
 
 
@@ -257,6 +257,10 @@ post_copyright:
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
+
+# Custom inverse style
+inverse_header: true
+inverse_footer: true
 
 # Custom Logo.
 # !!Only available for Default Scheme currently.

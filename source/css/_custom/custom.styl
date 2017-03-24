@@ -1,1 +1,19 @@
 // Custom styles.
+
+if hexo-config("inverse_header")
+  .header { background-image: url('/img/home-bg.jpg'); }
+  .brand { background: none; }
+  .site-subtitle { color: $grey-light;}
+  .menu .menu-item {
+	  a {
+		color: $grey-light;
+		&:hover { border-bottom-color: white;  color: white;}
+	  }
+	}
+	
+if hexo-config("inverse_footer")
+	.footer { background: $black-deep; }
+	.theme-link {
+		color: $grey-dark;
+		&:hover {border-bottom-color: white;  color: white;}
+	}
