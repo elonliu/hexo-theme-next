@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /img/favicon.png
+favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -38,8 +38,8 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
-  about: /about
+  #categories: /categories
+  #about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
@@ -114,7 +114,7 @@ font:
   logo:
     external: true
     family:
-    size: 30
+    size:
 
   # Font settings for <code> and code blocks.
   codes:
@@ -133,12 +133,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-social:
+#social:
   #LinkLabel: Link
-  GitHub: https://github.com/elonliu
-  LinkedIn: http://www.linkedin.com/in/yilongliu/
-  Twitter: https://twitter.com/ElonLiu89
-  Instagram: https://www.instagram.com/elonliu/?hl=en
+
 
 # Social Links Icons
 # Icon Mapping:
@@ -150,15 +147,14 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  LinkedIn: linkedin
   Twitter: twitter
-  Instagram: instagram
+  Weibo: weibo
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: /img/avatar.jpg
+#avatar:
 
 
 # Table Of Contents in the Sidebar
@@ -172,22 +168,22 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by
+#creative_commons: by-nc-sa
 #creative_commons:
 
 
 sidebar:
   # Sidebar Position, available value: left | right
-  #position: left
-  position: right
+  position: left
+  #position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  #display: post
-  display: always
+  display: post
+  #display: always
   #display: hide
   #display: remove
 
@@ -248,19 +244,15 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: true
-  license: CC BY 4.0
-  license_url: https://creativecommons.org/licenses/by/4.0/
+  enable: false
+  license: CC BY-NC-SA 3.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
 
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
-
-# Custom inverse style
-inverse_header: true
-inverse_footer: true
 
 # Custom Logo.
 # !!Only available for Default Scheme currently.
@@ -276,7 +268,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties
+highlight_theme: normal
 
 
 # ---------------------------------------------------------------
@@ -285,8 +277,8 @@ highlight_theme: night eighties
 
 # MathJax Support
 mathjax:
-  enable: true
-  #per_page: false
+  enable: false
+  per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
@@ -300,7 +292,10 @@ mathjax:
 #duoshuo_shortname:
 
 # Disqus
-disqus_shortname: elonliu
+disqus:
+  enable: false
+  shortname:
+  count: true
 
 # Hypercomments
 #hypercomments_id:
@@ -342,7 +337,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-google_analytics: UA-64832214-1
+#google_analytics:
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -396,9 +391,9 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
-  app_id: hnYSKO6eHbaeYwDqtGswEqgK-gzGzoHsz
-  app_key: tr6hIO38whceR9Fhf5pI9guc
+  enable: false
+  app_id: #<app_id>
+  app_key: #<app_key>
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -481,6 +476,9 @@ fancybox: true
 # Canvas-nest
 canvas_nest: false
 
+#three_waves
+three_waves: false
+
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
 # For example
@@ -531,6 +529,10 @@ vendors:
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
+  
+  #three
+  three:
+  three_waves:
 
 
 
